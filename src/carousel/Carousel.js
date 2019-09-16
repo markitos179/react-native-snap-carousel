@@ -263,7 +263,7 @@ export default class Carousel extends Component {
         }
 
         if (nextProps.onScroll !== this.props.onScroll) {
-          this._setScrollHandler(nextProps);
+          //this._setScrollHandler(nextProps);
         }
     }
 
