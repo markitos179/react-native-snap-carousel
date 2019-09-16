@@ -49,7 +49,7 @@ export function defaultAnimatedStyles (index, animatedValue, carouselProps) {
     if (carouselProps.inactiveSlideScale < 1) {
         animatedScale = {
             transform: [{
-                scale: animatedValue.interpolate({
+                scaleY: animatedValue.interpolate({
                     inputRange: [0, 1],
                     outputRange: [carouselProps.inactiveSlideScale, 1]
                 })
@@ -82,7 +82,7 @@ export function shiftAnimatedStyles (index, animatedValue, carouselProps) {
 
     if (carouselProps.inactiveSlideScale < 1) {
         animatedScale = {
-            scale: animatedValue.interpolate({
+            scaleY: animatedValue.interpolate({
                 inputRange: [0, 1],
                 outputRange: [carouselProps.inactiveSlideScale, 1]
             })
